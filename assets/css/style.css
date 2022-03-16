@@ -2471,37 +2471,43 @@ section {
 
 .lastli {
 	position: relative !important;
-	width: 60px !important;
-	margin-left: 15px;
+	width: 40px;
+	margin: 0 20px;
 }
 
 .lastli a {
 	padding: 0 !important;
 }
 
+
+.lastli:hover .guoqi {
+	display: block;
+}
+
 .guoqi {
-	width: 50px;
+	width: 100%;
 	height: auto;
 	position: absolute;
-	top: -5px;
-	left: 0px;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
 	display: none;
 }
 
+.icon01,
 .guoqi img {
-	width: 30px;
-	height: 30px;
-	margin-left: 10px;
+	width: 100%;
+	/* margin-left: 10px; */
 }
 
 .icon01 {
-	width: 30px;
-	height: 30px;
-	margin-left: 10px;
+	/* width: 30px; */
+	/* height: 30px; */
+	/* margin-left: 10px; */
 }
 
 .audio-content {
-	background: #e9ecef;
+	background: #ffffff;
 	border-radius: 5px;
 }
 
@@ -2570,9 +2576,10 @@ section {
 	transition: 0.3s;
 }
 
-.audioinformation p{
+.audioinformation p {
 	font-weight: 300;
 }
+
 .audioTypeToggle {
 	cursor: pointer;
 }
@@ -2580,12 +2587,19 @@ section {
 .audioTypeToggle h3 {
 	font-size: 1.2rem;
 }
-.playAudio{
+
+.playAudio {
 	/* flex: 0 0 20%; */
 	padding: 30px;
 }
-#audio_inner{
+
+#audio_inner {
 	position: absolute;
 	right: 10%;
 	bottom: 0%;
+}
+
+.audioToggle {
+	max-height: 40px;
+	margin-left: 20px;
 }

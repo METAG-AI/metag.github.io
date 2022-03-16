@@ -15,9 +15,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,9 +30,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="assets/js/jquery-1.11.0.js"></script>
-  <script src="assets/js/tab.js"></script>
   <!-- 引入随机生成播放文字的jq -->
-  <script src="assets/js/random.js"></script>
+  <!-- <script src="assets/js/random.js"></script> -->
 </head>
 
 <body>
@@ -83,7 +82,6 @@
             <div class="guoqi">
               <a href="index.html"><img src="assets/img/united-states.png" /></a>
               <a href="Cnindex.html"><img src="assets/img/china.png" /></a>
-
             </div>
           </li>
 
@@ -126,347 +124,292 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-      <div class="row gy-4 justify-content-center audioTypeContainer">
-        <div class="audioTypeToggle active col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-                <i class="ri-discuss-line icon"></i>
-                <h3>Voice Synthesis</h3>
-            </div>
-        </div>
-        <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-                <i class="ri-discuss-line icon"></i>
-                <h3>Cross-lingual Transfer</h3>
-            </div>
-        </div>
-
-        <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box green">
-                <i class="ri-discuss-line icon"></i>
-                <h3>Emotional Synthesis</h3>
-            </div>
-        </div>
-
-        <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-                <i class="ri-discuss-line icon"></i>
-                <h3>表情唇形同步</h3>
-            </div>
-        </div>
-
-        <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-                <i class="ri-discuss-line icon"></i>
-                <h3>多模态智能交互</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="audio-content col-10 p-0 mx-auto mt-3">
-
-        <section class="active">
-            <div class="row m-0 p-2 justify-content-between">
-                <div class="col-4 p-0 text-white p-2">
-                    <div class="audioinformation">
-                        <h3>多发音人语音合成</h3>
-                        <p>基于深度学习技术，实现单一角色或多角色的独特的声音模型，并达到通过文本来驱动的效果。</p>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="row gy-4">
-                        <div class="p-2 col-10 d-flex">
-                            <div class="d-flex col-10 p-0">
-                                <input disabled class="form-control audioInput" type="text"></input>
-                            </div>
-                            <button class="btn audioToggle col-2 btn-primary">切换</button>
-                        </div>
-                    </div>
-                    <div class="row mt-5 justify-content-center">
-                        <div class="playAudio col-3" data-src="0/0/english.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>+</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/italian-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/b.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>=</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/de-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a+b.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
-            <div class="row m-0 p-2 justify-content-between">
-                <div class="col-4 p-0 text-white p-2 ">
-                    <div class="audioinformation">
-                        <h3>跨语种语音合成</h3>
-                        <p>
-                            通过跨语种声音合成技术，实现从单一语种的影音视频，自动生成多语种的影音视频，相应的唇形及面容特征也会有同步的变化。
-                        </p>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="row gy-4">
-                        <div class="p-2 col-10 d-flex">
-                            <div class="d-flex col-12 p-0">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-                                    vero distinctio saepe eligendi nam incidunt obcaecati soluta nihil
-                                    aliquam ab!</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row mt-5 justify-content-center wrap">
-
-                        <div class="playAudio col-3" data-src="0/0/english.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>+</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/italian-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/b.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>=</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/de-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a+b.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="playAudio col-3" data-src="0/0/english.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>+</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/italian-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/b.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-1 h3 d-flex align-items-center">
-                            <span>=</span>
-                        </div>
-                        <div class="playAudio col-3" data-src="0/0/de-en.wav">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a+b.png" alt="">
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
-            <div class="row m-0 p-2 justify-content-between">
-                <div class="col-4 p-0 text-white p-2">
-                    <div class="audioinformation">
-                        <h3>情感化语音合成</h3>
-                        <p>可以按喜怒哀乐等多种情感合成语音，并在不同的情感维度进行强烈度大小的调节。</p>
-                    </div>
-                </div>
-                <div class="col-7">
-
-                    <div class="moreLanguage">
-                        <div class="row">
-                            <div class="col-12">
-                                构建可自然说话的应用和服务，从270多种神经语音、119种语言和变体中进行选择。使用自定义语音区分品牌，并使用不同的说话风格和情感音调访问语音，以适应你的用例一从文本阅读器到客户支持聊天机器人。
-                            </div>
-                        </div>
-                        <div class="checkboxList pt-2 d-flex">
-                            <div class="radio me-4">
-                                <label><input type="radio" name="optradio">无情绪</label>
-                            </div>
-                            <div class="radio me-4">
-                                <label><input type="radio" name="optradio">生气</label>
-                            </div>
-                            <div class="radio me-4">
-                                <label><input type="radio" name="optradio">悲伤</label>
-                            </div>
-                            <div class="radio me-4">
-                                <label><input type="radio" name="optradio">开心</label>
-                            </div>
-                            <div class="radio me-4">
-                                <label><input type="radio" name="optradio">害怕</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5 justify-content-center">
-                        <div class="playAudio col-3">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
-            <div class="row m-0 p-2 justify-content-between">
-                <div class="col-4 p-0 text-white p-2">
-                    <div class="audioinformation">
-                        <h3>表情唇形同步</h3>
-                        <p class="">在声音合成的同时，同步由AI生成对人面部表情和唇形的控制。</p>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="row gy-4">
-                        <div class="p-2 col-10 d-flex">
-                            <div class="d-flex col-10 p-0">
-                                <input disabled class="form-control audioInput" type="text"></input>
-                            </div>
-                            <button class="btn audioToggle col-2 btn-primary">切换</button>
-                        </div>
-                    </div>
-                    <div class="row mt-5 justify-content-center">
-                        <div>
-                            <video width="60%" height=""
-                                src="https://www.runoob.com/try/demo_source/movie.mp4"></video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
-            <div class="row m-0 p-2 justify-content-between">
-                <div class="col-4 p-0 text-white p-2">
-                    <div class="audioinformation">
-                        <h3>多模态智能交互</h3>
-                        <p class="">多模态感知和多模态交互，让沟通/对话更深情。</p>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="row gy-4">
-                        <div class="p-2 col-10 d-flex">
-                            <div class="d-flex col-10 p-0">
-                                <input disabled class="form-control audioInput" type="text"></input>
-                            </div>
-                            <button class="btn audioToggle col-2 btn-primary">切换</button>
-                        </div>
-                    </div>
-                    <div class="row mt-5 justify-content-center">
-                        <div class="playAudio col-3">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a.png" alt="">
-                            </a>
-                        </div>
-                        <div class="playAudio col-3">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/b.png" alt="">
-                            </a>
-                        </div>
-                        <div class="playAudio col-3">
-                            <a class="icon_person" href="#">
-                                <img width="100%" src="./assets/img/a+b.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 播放音频的容器 -->
-        <div id="audio_inner"></div>
-
-    </div>
-</div>
-      <!-- <div class="container" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Services</h2>
-          <p>Varieties of AI solutions for different scenarios</p>
+          <h2>SERVICES</h2>
+          <p>Varieties of AI solutions for different scenarios </p>
         </header>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-
+        <div class="row gy-4 justify-content-center audioTypeContainer">
+          <div class="audioTypeToggle active col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
               <i class="ri-discuss-line icon"></i>
               <h3>Voice Synthesis</h3>
-              <p>Based on deep learning technology to achieve a unique voice model for a single character or multiple
-                characters, and achieve the effect of driving through the text.</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box orange">
               <i class="ri-discuss-line icon"></i>
               <h3>Cross-lingual Transfer</h3>
-              <p>Through cross-lingual sound synthesis technology, it realizes the automatic generation of multilingual
-                audio and video from a single language, synchronized change lip and facial features.</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box green">
               <i class="ri-discuss-line icon"></i>
               <h3>Emotional Synthesis</h3>
-              <p>Voice can be synthesized according to a variety of emotions such as happiness, anger, sadness and joy,
-                and the intensity level can be adjusted in different emotional dimensions.</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
               <i class="ri-discuss-line icon"></i>
               <h3>Facial&Lip Sync</h3>
-              <p>Simultaneous control of human facial expressions and lip shapes is generated by AI while the voice is
-                synthesized.</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="audioTypeToggle col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-box purple">
               <i class="ri-discuss-line icon"></i>
               <h3>Multimodal Interaction</h3>
-              <p>Multimodal perception and multimodal interaction, making communication/dialogue more soulful.</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>More Solutions</h3>
-              <p>Help customize voice for your own scenarios</p>
-              <a href="#contact" class="read-more"><span>Contact US</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
         </div>
 
-      </div> -->
+        <div class="audio-content col-10 p-0 mx-auto mt-3">
 
-    </section><!-- End Services Section -->
+          <section class="active">
+            <div class="row m-0 p-2 justify-content-between">
+              <div class="col-4 p-0 text-white p-2">
+                <div class="audioinformation">
+                  <h3>Voice Synthesis</h3>
+                  <p>Based on deep learning technology to achieve a unique voice model for a single character or
+                    multiple characters, and achieve the effect of driving through the text.</p>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="row gy-4">
+                  <div class="p-2 col-10 d-flex">
+                    <div class="d-flex col-10 p-0">
+                      <div class="audioInput"></div>
+                    </div>
+                    <button class="btn audioToggle col-2 btn-primary">切换</button>
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                  <div class="playAudio col-3" data-src="0/0/english.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>+</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/italian-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/b.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>=</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/de-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a+b.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="">
+            <div class="row m-0 p-2 justify-content-between">
+              <div class="col-4 p-0 text-white p-2 ">
+                <div class="audioinformation">
+                  <h3>Cross-lingual Transfer</h3>
+                  <p>
+                    Through cross-lingual sound synthesis technology, it realizes the automatic generation of
+                    multilingual audio and video from a single language, synchronized change lip and facial features.
+                  </p>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="row gy-4">
+                  <div class="p-2 col-10 d-flex">
+                    <div class="d-flex col-12 p-0">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+                        vero distinctio saepe eligendi nam incidunt obcaecati soluta nihil
+                        aliquam ab!</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center wrap">
+
+                  <div class="playAudio col-3" data-src="0/0/english.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>+</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/italian-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/b.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>=</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/de-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a+b.png" alt="">
+                    </a>
+                  </div>
+
+                  <div class="playAudio col-3" data-src="0/0/english.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>+</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/italian-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/b.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-1 h3 d-flex align-items-center">
+                    <span>=</span>
+                  </div>
+                  <div class="playAudio col-3" data-src="0/0/de-en.wav">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a+b.png" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="">
+            <div class="row m-0 p-2 justify-content-between">
+              <div class="col-4 p-0 text-white p-2">
+                <div class="audioinformation">
+                  <h3>Emotional Synthesis</h3>
+                  <p>Voice can be synthesized according to a variety of emotions such as happiness, anger, sadness and
+                    joy, and the intensity level can be adjusted in different emotional dimensions.</p>
+                </div>
+              </div>
+              <div class="col-7">
+
+                <div class="moreLanguage">
+                  <div class="row">
+                    <div class="col-12">
+                      Build applications and services that can speak naturally, and choose from more than 270
+                      Neurophonetics, 119 languages and variants. Use custom voice to distinguish brands, and use
+                      different speech styles and emotional tones to access voice to adapt to your use case 1, from text
+                      readers to customer support chat robots.
+                    </div>
+                  </div>
+                  <div class="checkboxList pt-2 d-flex">
+                    <div class="radio me-4">
+                      <label><input type="radio" name="optradio">No emotion</label>
+                    </div>
+                    <div class="radio me-4">
+                      <label><input type="radio" name="optradio">get angry</label>
+                    </div>
+                    <div class="radio me-4">
+                      <label><input type="radio" name="optradio">Sadness</label>
+                    </div>
+                    <div class="radio me-4">
+                      <label><input type="radio" name="optradio">happy</label>
+                    </div>
+                    <div class="radio me-4">
+                      <label><input type="radio" name="optradio">fear</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                  <div class="playAudio col-3">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="">
+            <div class="row m-0 p-2 justify-content-between">
+              <div class="col-4 p-0 text-white p-2">
+                <div class="audioinformation">
+                  <h3>Facial&Lip Sync</h3>
+                  <p class="">Simultaneous control of human facial expressions and lip shapes is generated by AI while
+                    the voice is synthesized.</p>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="row gy-4">
+                  <div class="p-2 col-10 d-flex">
+                    <div class="d-flex col-10 p-0">
+                      <div class="audioInput"></div>
+                    </div>
+                    <button class="btn audioToggle col-2 btn-primary">切换</button>
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                  <div>
+                    <video width="60%" height="" src="https://www.runoob.com/try/demo_source/movie.mp4"></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="">
+            <div class="row m-0 p-2 justify-content-between">
+              <div class="col-4 p-0 text-white p-2">
+                <div class="audioinformation">
+                  <h3>Multimodal Interaction</h3>
+                  <p class="">Multimodal perception and multimodal interaction, making communication/dialogue more
+                    soulful.</p>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="row gy-4">
+                  <div class="p-2 col-10 d-flex">
+                    <div class="d-flex col-10 p-0">
+                      <div class="audioInput"></div>
+                    </div>
+                    <button class="btn audioToggle col-2 btn-primary">切换</button>
+                  </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                  <div class="playAudio col-3">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a.png" alt="">
+                    </a>
+                  </div>
+                  <div class="playAudio col-3">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/b.png" alt="">
+                    </a>
+                  </div>
+                  <div class="playAudio col-3">
+                    <a class="icon_person" href="#">
+                      <img width="100%" src="./assets/img/a+b.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 播放音频的容器 -->
+          <div id="audio_inner"></div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End Services Section -->
 
 
     <!-- ======= Features Section ======= -->
@@ -868,6 +811,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/audio.js"></script>
 
 </body>
 
