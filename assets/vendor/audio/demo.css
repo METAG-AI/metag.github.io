@@ -1,0 +1,39 @@
+.demo{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    
+}
+.demo .demotop{
+    width: 100%;
+    height: 200px;
+    background-color: #f00;
+}
+.demo .demotop .titem{
+    width: 18%;
+    height: 200px;
+    margin-right: 2%;
+    background-color: blue;
+    float: left;
+}
+.demo .left{
+    width: 36%;
+    height:400px;
+    float: left;
+    background-color: aquamarine;
+}
+.demo .right{
+    width: 64%;
+    height: 400px;
+    float: right;
+    background-color: cornflowerblue;
+}
+.demo .right .cricles .citem{
+    
+width:120px ;
+height: 120px;
+background-color: #f00;
+border-radius: 50%;
+float: left;
+
+}
