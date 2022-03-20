@@ -21,8 +21,8 @@
      "I often say to myself, don't tell others you're unhappy, work hard, and go home and go to bed as soon as you have nothing to do.",
      "Life will get better when it is bad to a certain extent, because it can't be worse. After working hard, I know many things and stick to it."
    ]
-  // 取反判断主内容区域是否含有en类名，
-   if(!$("#main").hasClass('en')){
+   // 取反判断主内容区域是否含有en类名，
+   if (!$("#main").hasClass('en')) {
      CN = EN
    }
    //  赋值给文字输入框
@@ -45,14 +45,34 @@
    $('.playAudio').click(function (e) {
      //  阻止默认事件
      e.preventDefault()
-     //  判断当前音频是否正在被播放
-     if ($(this).children().hasClass('active')) return false
-     //  判断音频是否在播放
-     if (audio) audio.remove()
-
      //  当前路径 
      const path = $(this).attr('data-src')
-     console.log(path);
+
+     let removeAudio = () => {
+       $('.playAudio').children().removeClass('active')
+       audio.remove()
+     }
+
+     //  判断当前音频是否正在被播放
+     if (audio != null) {
+       console.log(audio.src.indexOf(path));
+       //  判断是否点击了新的音频
+       if (audio.src.indexOf(path) == -1) {
+         audio.muted = true 
+         audio.remove()
+         audio = null
+       } else {
+         //  如果是否暂停
+         if (audio.paused) {
+           $(this).children().addClass('active')
+           return audio.play()
+         } else {
+           $(this).children().removeClass('active')
+           return audio.pause()
+         }
+       }
+
+     } 
 
      //  给当前元素播放
      $(this).children().addClass('active')
@@ -60,18 +80,15 @@
      $(this).siblings().children().removeClass('active')
 
      audio = new Audio()
-     console.log(audio);
+     //  console.log(audio);
      audio.volume = 0.2
      audio.src = `./audio/${path}`
-     audio.controls = true
+    //  audio.controls = true
      audio.play()
      //  音频播放完毕删除元素并还原样式
-     audio.onended = () => {
-       $('.playAudio').children().removeClass('active')
-       //  audio.remove()
-     }
+     audio.onended = removeAudio
 
-     $('#audio_inner').append(audio)
+      $('#audio_inner').append(audio)
    })
 
    //  音频类型切换
