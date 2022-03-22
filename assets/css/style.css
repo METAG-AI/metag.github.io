@@ -2584,6 +2584,7 @@ section {
 
 .audioTypeToggle {
 	cursor: pointer;
+
 }
 
 .audioTypeToggle h3 {
@@ -2601,41 +2602,54 @@ section {
 	right: 10%;
 	bottom: 0%;
 }
-.audioText{
+
+.audioText {
 	background: #F7F7F7;
+	border-radius: 6px;
+	height: 110px;
 }
+
 .audioInput {
-	height: 8rem;
+	height: 12rem;
 	font-family: "Nunito", sans-serif;
+	font-weight: 200;
 }
 
 .audioToggle {
 	padding-left: 2%;
 	height: 3rem;
+	margin-top: -40px;
 	cursor: pointer;
-	background: url(../img/random.png) no-repeat left center/100% 100%;
+	background: url(../img/random.png) no-repeat left center/60% 60%;
 }
 
 .flex-wrap {
 	flex-wrap: wrap;
 }
+
 .audio-content>section {
 	box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
 }
+
 @media screen and (max-width:750px) {
 	.audioTypeToggle {
-		width: 18%;
+		width: 33%;
 		font-size: 20px;
 	}
 
 	.audioTypeToggle h3 {
-		display: none;
+		/* display: none; */
+		font-size: 16px;
+		font-weight: 200;
+		line-height: 20px;
 	}
-	.services .service-box{
+
+	.services .service-box {
 		padding: 0;
 	}
+
 	.services .service-box .icon {
-		display: block;
+		display: none;
 		margin: 0;
 		font-size: 11px;
 		padding: 20px;
